@@ -99,6 +99,23 @@ body {
     display: block;
 }
 
+.menu-link:active {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #404bbf;
+}
+
+.menu-link:hover,
+.menu-link:focus {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #404bbf;
+}
+
 .page-address {
     margin-left: auto;
     font-style: normal;
@@ -120,6 +137,35 @@ body {
     color: #434455;
 }
 
-.page-address-link {}
-
+.page-address-link:hover,
+.page-address-link:focus {
+    color: #404bbf;
+}
 /* =================== /Header Styles ===================== */
+
+/* ================ Page Hero Styles ===================== */
+.page-hero {
+    background-color: #2e2f42;
+}
+
+.page-hero-container {}
+
+.main-title {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07143;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #fff;
+    padding-top: 188px;
+    padding-bottom: 188px;
+    max-width: 496px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.page-hero-btn {
+    
+}
+
+/* ================ /Page Hero Styles ===================== */
