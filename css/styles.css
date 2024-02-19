@@ -174,7 +174,7 @@ body {
 }
 
 .page-hero-btn {
-    display: flex;
+    display: block;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -205,7 +205,7 @@ body {
 }
 
 .benefit-container {
-    padding: 120px 0
+    padding: 120px 0 120px;
 }
 
 .page-nav {
@@ -214,12 +214,12 @@ body {
 
 .page-benefits-menu {
     display: flex;
+    gap: 24px;
     
 }
 
 .page-benefits-items {
-    gap: 24px;
-    width: 264px;
+    width: calc((100% - 72px) / 4);
     justify-content: space-between;
 }
 
@@ -229,7 +229,7 @@ body {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
-    
+    margin-bottom: 8px
 }
 
 .page-benefits-text {
@@ -241,6 +241,9 @@ body {
 /* ==================== /Page Benefits Style ================== */
 
 /* ================== Our team ======================= */
+.page-team {
+    padding: 120px 0;
+}
 .page-team-title {
     font-weight: 700;
     font-size: 36px;
@@ -250,7 +253,6 @@ body {
     text-align: center;
     color: #2e2f42;
     margin-bottom: 72px;
-    margin-top: 120px;
 }
 
 .page-team-menu {
@@ -263,6 +265,12 @@ body {
     background-color: #fff;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     width: 264px;
+    gap: 24px;
+    border-radius: 0px 0px 4px 4px;
+}
+
+.page-team-info {
+    padding: 32px 0;
 }
 
 .page-team-subtitle {
@@ -288,6 +296,11 @@ body {
 /* ================== /Our team ======================= */
 
 /* ===================== Our Portfolio =================== */
+.page-portfolio {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
 .page-portfolio-title {
     margin-top: 120px;
     margin-bottom: 72px;
@@ -304,10 +317,18 @@ body {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
 }
 
 .page-portfolio-item {
     width: calc((100% - 48px) / 3);
+}
+
+.page-portfolio-info-block {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
 }
 
 .page-portfolio-subtitle {
@@ -333,6 +354,7 @@ body {
 /* ======================= Footer ========================= */
 .page-footer {
     background-color: #2e2f42;
+    padding: 100px 0;
 }
 
 .page-footer-container {
@@ -341,6 +363,7 @@ body {
 }
 
 .page-footer-logo {
+    display: inline-block;
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -348,7 +371,7 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
-    margin-bottom: 17.5px;
+    margin-bottom: 16px;
 }
 
 .page-footer-logo-studio {
